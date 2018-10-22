@@ -19,4 +19,12 @@ module.exports.policies = {
 
   // '*': true,
 
+  // User has to be logged in to access user routes.
+  'user/*': 'isLoggedIn',
+  // Other than the bellow
+  'user/login' : true,
+  'user/logout' : true,
+  'user/check' : true,
+  'user/create' : true,
+
 };
