@@ -1,0 +1,5 @@
+<p>Greetings, <%= fullName %>!</p>
+<p>You have requested an email change, click the link bellow to confirm the change. If not just ignore this!</p>
+
+<!--Create a URL with the token-->
+<p><a href="<%= url.resolve(sails.config.custom.apiUrl,'/api/v1/email/verify')+ '?token='+ encodeURIComponent(token) %>">Confirm email</a></p>
