@@ -27,7 +27,14 @@ module.exports.routes = {
   //  ╠═╣╠═╝║  ║╣ ║║║ ║║╠═╝║ ║║║║║ ║ ╚═╗
   //  ╩ ╩╩  ╩  ╚═╝╝╚╝═╩╝╩  ╚═╝╩╝╚╝ ╩ ╚═╝
 
+  // User API endpoints
+  'POST  /api/v1/user/create': { action: 'user/create' },
+  'PUT  /api/v1/user/update': { action: 'user/update' },
+  'DELETE  /api/v1/user/delete': { action: 'user/delete' },
 
+  'PUT  /api/v1/user/login': { action: 'user/login' },
+  'GET  /api/v1/user/logout': { action: 'user/logout' },
+  'GET /api/v1/user/check': { action: 'user/check' },
 
   //  ╦ ╦╔═╗╔╗ ╦ ╦╔═╗╔═╗╦╔═╔═╗
   //  ║║║║╣ ╠╩╗╠═╣║ ║║ ║╠╩╗╚═╗
