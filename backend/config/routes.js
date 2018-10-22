@@ -50,6 +50,10 @@ module.exports.routes = {
   'PUT  /api/v1/category/update': { action: 'category/update' },
   'DELETE  /api/v1/category/delete': { action: 'category/delete' },
 
+  // Comment API endpoints
+  'POST  /api/v1/comment/create': { action: 'comment/create' },
+  'DELETE  /api/v1/comment/delete': { action: 'comment/delete' },
+
   // Email API Endpoints
   "GET /api/v1/email/verify" : { action: "email/verify"}
 
