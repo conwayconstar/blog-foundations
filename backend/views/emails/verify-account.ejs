@@ -1,0 +1,3 @@
+<p>Greetings, <%= fullName %>!</p>
+<p>Thank you for signing up! Please click the link bellow to confirm your email and verify your account!</p>
+<p><a href="<%= url.resolve(sails.config.custom.apiUrl,'/api/v1/email/verify')+ '?token='+ encodeURIComponent(token) %>">Confirm email</a></p>
