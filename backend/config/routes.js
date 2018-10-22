@@ -36,6 +36,11 @@ module.exports.routes = {
   'GET  /api/v1/user/logout': { action: 'user/logout' },
   'GET /api/v1/user/check': { action: 'user/check' },
 
+  // Category API endpoints
+  'POST  /api/v1/category/create': { action: 'category/create' },
+  'PUT  /api/v1/category/update': { action: 'category/update' },
+  'DELETE  /api/v1/category/delete': { action: 'category/delete' },
+
   //  ╦ ╦╔═╗╔╗ ╦ ╦╔═╗╔═╗╦╔═╔═╗
   //  ║║║║╣ ╠╩╗╠═╣║ ║║ ║╠╩╗╚═╗
   //  ╚╩╝╚═╝╚═╝╩ ╩╚═╝╚═╝╩ ╩╚═╝
