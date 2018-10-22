@@ -29,5 +29,6 @@ module.exports.policies = {
 
   // User has to be logged in and admin to access post routes.
   'post/*' : ['isLoggedIn', 'isAdmin'],
+  'category/*' : ['isLoggedIn', 'isAdmin'],
 
 };
