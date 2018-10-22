@@ -36,6 +36,15 @@ module.exports.routes = {
   'GET  /api/v1/user/logout': { action: 'user/logout' },
   'GET /api/v1/user/check': { action: 'user/check' },
 
+  // Post API endpoints
+  'POST  /api/v1/post/create': { action: 'post/create' },
+  'PUT  /api/v1/post/update': { action: 'post/update' },
+  'DELETE  /api/v1/post/delete': { action: 'post/delete' },
+  
+  'GET /api/v1/post/all' : { action: 'post/all'},
+  'GET /api/v1/post/get' : { action: 'post/get'},
+
+
   //  ╦ ╦╔═╗╔╗ ╦ ╦╔═╗╔═╗╦╔═╔═╗
   //  ║║║║╣ ╠╩╗╠═╣║ ║║ ║╠╩╗╚═╗
   //  ╚╩╝╚═╝╚═╝╩ ╩╚═╝╚═╝╩ ╩╚═╝
