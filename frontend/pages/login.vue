@@ -106,10 +106,9 @@
 </template>
 
 <script>
-
-  export default {
-    name: "Login",
-    data() {
+export default {
+  name: 'Login',
+  data(){
       return {
         // Set login form data
         login: {
@@ -139,7 +138,7 @@
               _this.$router.push('/account');
           })
           .catch(error =>
-            _this.data.errors[form] = error.response.data.message);
+            _this.errors[form] = error.response.data.message);
       }
     }
   }
